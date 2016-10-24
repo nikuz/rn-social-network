@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RN social network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwW-PJ-tLN">
+                    <frame key="frameInset" minX="153" minY="274" width="174" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-screen-logo" translatesAutoresizingMaskIntoConstraints="NO" id="XpD-9p-VaV">
+                    <frame key="frameInset" minY="117" width="480" height="117"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-screen-logo" translatesAutoresizingMaskIntoConstraints="NO" id="dBr-pE-U5p">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="52V-x9-Fro"/>
+                        <constraint firstAttribute="height" constant="128" id="BD8-At-Tak"/>
+                        <constraint firstAttribute="height" constant="128" id="KLN-Br-LAQ"/>
+                        <constraint firstAttribute="width" constant="240" id="O4g-vD-XMu"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="BD8-At-Tak"/>
+                            <exclude reference="O4g-vD-XMu"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dBr-pE-U5p" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="U27-Zo-mkJ"/>
+                <constraint firstItem="dBr-pE-U5p" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qld-FE-a79"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="ZwW-PJ-tLN"/>
+                    <exclude reference="XpD-9p-VaV"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="454" y="439"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splash-screen-logo" width="96" height="96"/>
+    </resources>
+</document>
